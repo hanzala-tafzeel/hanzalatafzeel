@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanzala Tafzeel - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        
+        .email-info {
+            background: #f0f4ff;
+            padding: 15px 20px;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .email-info p {
+            color: #555;
+            font-size: 0.95em;
+        }
+        
+        .email-info .email {
+            color: #667eea;
+            font-weight: bold;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .project-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        
+        .project-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .skills-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .skills-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        
+        footer p {
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hanzala Tafzeel</h1>
+            <p class="subtitle">B.Tech Student | Software Developer | IIT Madras</p>
+            <div class="email-info">
+                <p>Contact Email:</p>
+                <p class="email"><!--email_off-->23f2004513@ds.study.iitm.ac.in<!--/email_off--></p>
+            </div>
+        </header>
+
+        <section class="skills-section">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">Software Engineering</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">HTML/CSS</span>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="color: white; margin-bottom: 30px; text-align: center; font-size: 1.8em;">Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>GitHub Contributions</h3>
+                    <p>Active participant in version control and collaborative development. Proficient with Git workflows, branching strategies, and GitHub-based project management.</p>
+                </div>
+                <div class="project-card">
+                    <h3>IIT Madras B.Tech Program</h3>
+                    <p>Currently pursuing Bachelor of Technology from Indian Institute of Technology Madras. Specializing in practical software development and engineering coursework.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and modern web applications. Skilled in frontend technologies and building user-friendly interfaces with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Hanzala Tafzeel. All rights reserved.</p>
+            <div class="contact-info">
+                <p>Email: <!--email_off-->23f2004513@ds.study.iitm.ac.in<!--/email_off--></p>
+                <p>GitHub: <a href="https://github.com/hanzala-tafzeel" style="color: #667eea; text-decoration: none;">github.com/hanzala-tafzeel</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
